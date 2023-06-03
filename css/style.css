@@ -1,0 +1,127 @@
+:root {
+  --main-font-family: Roboto, sans-serif;
+  --secondary-font-family: Raleway, sans-serif;
+  --main-color: #2e2f42;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--main-color);
+}
+
+.list {
+  list-style: none;
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo-type {
+  font-family: var(--secondary-font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.second-part-logo {
+  color: var(--main-color);
+}
+
+.second-part-logo-item {
+  color: #f4f4fd;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  text-decoration: underline;
+  color: #404bbf;
+}
+
+.contacts-data {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contacts-data:hover,
+.contacts-data:focus {
+  text-decoration: underline;
+  color: #404bbf;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.modal-open-btn {
+  width: 169px;
+  height: 56px;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.modal-open-btn:hover,
+.modal-open-btn:focus {
+  background-color: #404bbf;
+}
+
+.page-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.description-label {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.footer-text {
+  color: #f4f4fd;
+}
+
+.headline-our-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.card-contant {
+  text-align: center;
+}
+
+.dark-bg {
+  background-color: var(--main-color);
+}
