@@ -173,6 +173,11 @@ body {
   .second-part-logo {
     color: var(--primary-headline-color-theme-light);
   }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #404bbf;
+  }
 }
 
 /* 0 - 768px */
@@ -249,11 +254,6 @@ body {
     color: var(--primary-headline-color-theme-light);
   }
 
-  .menu-link:hover,
-  .menu-link:focus {
-    color: #404bbf;
-  }
-
   .menu-contacts {
     display: block;
     margin-top: 284px;
@@ -309,29 +309,6 @@ body {
     justify-content: center;
   }
 
-  .page-header {
-    box-sizing: border-box;
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  }
-
-  .logo-type {
-    font-family: var(--secondary-font-family);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--accent-color);
-  }
-
-  .second-part-logo {
-    color: var(--primary-headline-color-theme-light);
-  }
-
   .mobile-menu-open-btn {
     display: none;
   }
@@ -359,11 +336,6 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .menu-link:hover,
-  .menu-link:focus {
-    color: #404bbf;
   }
 
   .current-page:visited {
@@ -416,41 +388,34 @@ body {
   .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 
   .page-header-container {
     align-items: baseline;
   }
 
-  .menu-link {
-    position: relative;
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .logo-type {
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
   }
 
-  .menu-link:hover,
-  .menu-link:focus {
-    color: #404bbf;
-  }
-
-  .current-page:visited {
-    color: #404bbf;
+  .second-part-logo {
+    color: var(--primary-headline-color-theme-light);
   }
 
   .current-page::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -36px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
+    bottom: -40px;
   }
 
   .contacts-data {
@@ -609,27 +574,38 @@ body {
 
 /* ================= /OVERLAY ================= */
 /* ================= HERO ================= */
+@media screen and (max-width: 1158px) {
+  .hero-img {
+    margin: 0 auto;
+    padding: 112px 0;
+  }
+}
+
 /* MOBILE */
 @media screen and (max-width: 768px) {
-  .hero {
-    width: 428px;
+  .hero-img {
+    max-width: 428px;
     height: 432px;
-    background-image: url(../images/hero/bg-mobile.png);
-    background-size: 428px 432px;
+    background-color: var(--primary-headline-color-theme-light);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
-      background-color: var(--primary-headline-color-theme-light);
+    .hero-img {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero/bg-mobile@2x.png);
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 
@@ -671,25 +647,29 @@ body {
 
 /* TABLE */
 @media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
+  .hero-img {
+    max-width: 768px;
     height: 436px;
-    background-image: url(../images//hero/bg-table.png);
-    background-size: 768px 436px;
+    background-color: var(--primary-headline-color-theme-light);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg-table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
-      background-color: var(--primary-headline-color-theme-light);
+    .hero-img {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero/bg-table@2x.png);
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 
@@ -714,25 +694,30 @@ body {
 
 /* DESKTOP */
 @media screen and (min-width: 1158px) {
-  .hero {
-    width: 1158px;
+  .hero-img {
+    padding: 188px 0;
+    max-width: 1440px;
     height: 600px;
-    background-image: url(../images/hero/people-office-bg-desktop.png);
-    background-size: 1200px 600px;
+    background-color: var(--primary-headline-color-theme-light);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
-      background-color: var(--primary-headline-color-theme-light);
+    .hero-img {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero/people-office-bg-desktop@2x.png);
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 
@@ -751,6 +736,22 @@ body {
     justify-content: center;
   }
 }
+
+/* .hero-img {
+  margin: 0 auto;
+  padding: 188px 0;
+  max-width: 1440px;
+  height: 600px;
+  background-color: var(--primary-headline-color-theme-light);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
 
 /* ================= /HERO ================= */
 
