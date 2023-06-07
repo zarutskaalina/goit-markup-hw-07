@@ -145,8 +145,8 @@ body {
   }
 
   .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     box-sizing: border-box;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -213,8 +213,9 @@ body {
 
   .mobile-menu-container {
     position: relative;
-    padding-left: 24px;
-    padding-right: 24px;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
     padding-top: 80px;
     padding-bottom: 40px;
   }
@@ -256,7 +257,6 @@ body {
 
   .menu-contacts {
     display: block;
-    margin-top: 284px;
     margin-bottom: 48px;
   }
 
@@ -283,7 +283,7 @@ body {
 
   .menu-social {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 56px;
   }
 
@@ -346,7 +346,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -41px;
+    bottom: -32px;
     width: 100%;
     height: 4px;
     background-color: #404bbf;
@@ -1366,23 +1366,24 @@ body {
     justify-content: center;
   }
 
-  .contact-form-subscribe-input {
-    width: 398px;
+  .modal-subscribe-btn-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
 
 /* TABLE */
 @media screen and (min-width: 768px) and (max-width: 1158px) {
-  .footer-block {
-    padding-left: 108px;
-  }
+  /* .container {
+    width: 582px;
+  } */
 
   .page-footer {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    width: 582px;
   }
 
   .contact-form-subscribe {
