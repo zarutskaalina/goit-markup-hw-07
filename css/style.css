@@ -1520,7 +1520,7 @@ body {
 /* ================= /FOOTER ================= */
 
 /* ================= MODAL WINDOW ================= */
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 428px) {
   .modal {
     width: 100%;
   }
